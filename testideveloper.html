@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css">
+  <title>Hello</title>
+</head>
+
+<body>
+  <div id="home">
+   
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top fixed1">
+      <div class="container">
+        <img src="img/logo.png">
+        <span onclick="abc()"><i class="fas fa-bars"></i></span> 
+        
+     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us &nbsp;<i class="fas fa-angle-down"></i></a>
+              <div class="sub-menu single-column-menu">
+                <ul>
+                  <li><a href="whyus.html">WHY US</a></li>
+                  <li><a href="safety.html">SAFETY & QUALITY</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials &nbsp;<i class="fas fa-angle-down"></i></a>
+              <div class="sub-menu single-column-menu">
+                <ul>
+                  <li><a href="testimonials.html">OWNERS</a></li>
+                  <li><a href="testimanager.html">STRATA MANAGERS</a></li>
+                  <li><a href="testideveloper.html">DEVELOPERS</a></li>
+                  <li><a href="leaveatestimonial.html">LEAVE US A TESTIMONIAL</a></li>
+                </ul>
+              </div>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us &nbsp;<i class="fas fa-angle-down"></i></a>
+              <div class="sub-menu single-column-menu">
+                <ul>
+                  <li class="navs"><a href="feedback.html">FEEDBACK/SURVEYS</a>
+                    <div class="sub1-menu single-column-menu1">
+                      <ul>
+                        <li><a href="feedback.html">STARTA/BUILDING MANAGER</a></li>
+                        <li><a href="feedbackowner.html">OWNER</a></li>
+                        <li><a href="feedbackdeveloper.html">DEVELOPER BUILDER</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                  </li>
+  
+                  <li class="navs"><a href="#">EXISTING CUSTOMERS</a>
+                    <div class="sub2-menu single-column-menu2">
+                      <ul>
+                        <li><a href="manager.html">STARTA/BUILDING MANAGER</a></li>
+                        <li><a href="resident.html">OWNER/RESIDENT</a></li>
+                        <li><a href="feedbackdeveloper.html">PSM STAFF MEMBER</a></li>
+                        </ul>
+                    </div>
+                  
+                  </li>
+                  <li><a href="contactus.html">NEW ENQUIRY</a></li>
+                 
+                </ul>
+              </div>
+              
+            </li>
+          
+          </ul>
+          <div class="popup" id="popup-1">
+            <div class="overlay3"></div>
+              <div class="content">
+              <div class="close-btn" onclick="togglePopup()"> &times; 
+              </div>
+              <form class="home-search d-flex">
+                <input class="form-control me-2" type="search" placeholder="What are you searching for ?" aria-label="Search">
+                <i class="fas fa-search"></i>
+              </form>
+            
+            </div>
+             </div>
+          <div class="love " onclick="togglePopup()">
+            <i class="fas fa-search"></i>
+          </div>
+      
+       
+        </div>
+           
+      
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+         
+           <h6>Menu</h6>
+           <hr>
+  
+          <a href="/index.html">Home</a>
+          <hr>
+          <a href="#">About Us <span onclick="shyam()"><i class="fas fa-arrow-right"></i></span>  </a> 
+          
+          
+            <div id="mySidenav1" class="sidenav1">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <h6>About Us</h6>
+              <hr>
+              <a href="whyus.html">Why us</a>
+              <hr>
+              <a href="safety.html">Safety And Quality</a>
+              <hr>
+             
+              </div>
+              <hr>
+              <style>
+                .sidenav  i{color: grey; font-size: 12px; padding-top: 15px;}
+              </style>
+          
+   
+         
+       
+          
+          <a href="services.html">Services</a>
+          <hr>
+          <a href="projects.html">Projects</a>
+          <hr>
+            <a href="clients.html">Clients</a>
+            
+            <hr>
+            <a href="#">Testimonials  <span onclick="ram()"><i class="fas fa-arrow-right"></i></span></a> 
+          
+          
+            <div id="mySidenav1" class="sidenav1">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+              <h6>About Us</h6>
+              <hr>
+              <a href="testimonials.html">OWNERS</a>
+              <hr>
+              <a href="testideveloper.html">DEVELOPERS</a>
+              <hr>
+              <a href="leaveatestimonial.html">LEAVE US A TESTIMONIAL</a>
+              <hr>
+              </div>
+              <hr>
+          
+  
+            
+            <a href="#">Contact Us <span onclick="hari()"><i class="fas fa-arrow-right"></i></span>  </a> 
+          
+          
+        <div id="mySidenav1" class="sidenav1">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+          <h6>contact us</h6>
+  
+  
+  
+  
+          <a href="#">Feedback/Surveys <span onclick="sita()"><i class="fas fa-arrow-right"></i></span>  </a> 
+          
+          
+        <div id="mySidenav1" class="sidenav1">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+          <h6>feedback/Surveys</h6>
+          <hr>
+          <a href="testimonials.html">OWNERS</a>
+          <hr>
+          <a href="testideveloper.html">DEVELOPERS</a>
+          <hr>
+          <a href="leaveatestimonial.html">LEAVE US A TESTIMONIAL</a>
+          <hr>
+          </div>
+  
+  
+  
+          <hr>
+          <a href="testideveloper.html">Existing Customers</a>
+          <hr>
+          <a href="leaveatestimonial.html">New Enquiry</a>
+          <hr>
+          </div>
+          <hr>
+          
+  
+  
+  
+       </div>
+     
+    </nav>
+    </div>
+      <!-----------------------managers---------->
+      <div class="testi-dev">
+          <div class="container">
+            <div data-aos="fade-up" data-aos-duration="3000">
+      <h3>TESTIMONIALS-DEVELOPERS</h3>
+      </div>
+         </div>
+      </div>
+    </div>
+    <!--------------------------main------------------>
+    <div id="test">
+      <h4>Developers Testimonials</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="box">
+             <p>As secretary of the owner’s corporation at The Heir 309-311 Peats Ferry Rd Asquith, I would like to share our experiences / working relationship with Perfect Strata Maintenance. The sales and administration manager Mical Hader, controls the services provided with an extreme high level of competency. Her hand-picked staff have our place, which includes two 5 storey residential blocks separated by a paved garden court yard, common area abounding each of the blocks, 2 level basement garages, two garbage bays and surrounding gardens always looking very clean and tidy. This is our place of residence, where all the employees under her guidance treated it as such. Mical has excellent communication skills, with all involved here at the Heir. She is prepared to listen to concerns from her employees and residents alike. Then acts on it as needed in a very professional way. Her hands-on approach is very evident, this includes pre, during and post inspection of activities that take place, also her just pop in policy is reassuring. The one thing that really stands out is her eye for detail and “get it right” approach. In conclusion I say Mical, keep up the great work, it’s a pleasure to deal with you. and finally, you make the place where we live a real joy and we are proud to show it off.
+   </p>
+   <h5><strong>Rob Brown
+   </strong><br>Owner</h5>
+            </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+             <div class="box">
+               <p>I am an owner/occupier at a complex of 36 apartments in Rockdale with numerous foyers and an extremely large garden/landscaping area.  Our Strata Plan has been very dissatisfied with a number of contractors over the last 18 months until we were introduced to Perfect Strata Maintenance by our Strata Managers. PSM have been highly professional from the very first meeting that was arranged by our Strata Manager for PSM’s Sales Manager, Mical, to personally meet with me onsite and patiently walked through the entire complex, listening to my feedback, making notes, taking photos and offering suggestions and ideas throughout the process.  A comprehensive and competitive quotation was provided in a very timely fashion and from the initial cleaning and gardening service onwards, the high standard of workmanship has continued to be maintained.  PSM encourage ongoing contact and feedback and our complex has never looked better.  In particular, Mical is responsive to all requests at any time of the day or weekend, either by phone or email, which is very important and a unique feature within the industry.  PSM’s service has improved the look and feel of our complex, has definitely added value to our complex and they are an extremely professional, approachable and relatable company to work with.
+               </p>
+               <h5><strong>Michael Veitch
+               </strong><br>Owner</h5>
+             </div>
+           </div>
+           <div class="col-md-6 col-sm-6">
+             <div class="box">
+              <p>I am the president of an executive committee for a building which has been plagued by rubbish dumping and a general lack of care by residents and our former cleaners.
+   
+               I was introduced to Mical Hader of Perfect Strata Maintenance – and Mical came up with a strategy plan to help eliminate the rubbish dumping and bring the property back to acceptable standards.
+               
+               Within weeks of appointment the difference to the property common area was immediately noticeable – her staff are both professional and proficient in their duties.
+               
+               All work is completed to the highest of standards, and more importantly, small issues are acted upon immediately before they grow into larger problems.
+               
+               I have no hesitation in recommending Mical Hader / Perfect Strata Maintenance to other unit blocks for cleaning / common area maintenance.
+               
+              
+    </p>
+    <h5><strong>Sandy Hackworth
+    </strong><br>Owner</h5>
+             </div>
+             </div>
+             <div class="col-md-6 col-sm-6">
+               <div class="box">
+                <p>I am the president of an executive committee for a building which has been plagued by rubbish dumping and a general lack of care by residents and our former cleaners.
+   
+                 I was introduced to Mical Hader of Perfect Strata Maintenance – and Mical came up with a strategy plan to help eliminate the rubbish dumping and bring the property back to acceptable standards.
+                 
+                 Within weeks of appointment the difference to the property common area was immediately noticeable – her staff are both professional and proficient in their duties.
+                 
+                 All work is completed to the highest of standards, and more importantly, small issues are acted upon immediately before they grow into larger problems.
+                 
+                 I have no hesitation in recommending Mical Hader / Perfect Strata Maintenance to other unit blocks for cleaning / common area maintenance.
+             
+   
+      </p>
+      <h5><strong>Rob Brown
+      </strong><br>Owner</h5>
+               </div>
+               </div>
+               <div class="col-md-6 col-sm-6">
+                 <div class="box">
+                  <p>We have recently changed the gardening service at our property (16 townhouses) to Perfect Strata Maintenance after meeting Mical, who presented as more genuinely concerned with the outlook and well-being of our property, and so far service have been more satisfactory than what we previously experienced (at about the same cost), highly recommended.
+               
+     
+        </p>
+        <h5><strong>Ralph Gian
+        </strong><br>Owner</h5>
+                 </div>
+                 </div>
+                 <div class="col-md-6 col-sm-6">
+                   <div class="box">
+                    <p>From the moment that I met Mical, the sales manager for Perfect Strata Maintenance, I have been impressed with her ‘can do’ attitude and ability to deal with every problem whether big or small. Their competitive quote gave us much more bang for our bucks than the previous cleaners who had left a multitude of problems that Perfect Strata Maintenance has had to deal with and they have done so with no complaints. The PSM staff have worked diligently through all the issues they inherited from the previous cleaners until it is now a clean and pleasant environment to work in. it is such a relief to work with a company that is both professional and reliable. Thankyou Mical and Perfect Strata Maintenance.
+                 
+       
+          </p>
+          <h5><strong>Maria Campos
+          </strong><br>Owner</h5>
+                   </div>
+                   </div> 
+          </div>
+   
+   
+        </div>
+      </div>
+    </div>
+
+    
+    <!------------footer-------------->
+    <footer>
+      <div class="foots">
+        <div class="container">
+          <div class="row">
+          <div class="quick col-md-4 col-sm-6">
+            <img src="img/logo1.png" height="100vh">
+          </div>
+          <div class="col-md-4 col-sm-6 p-0 m-0">
+            <div class="links">
+              <ul>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>&nbsp;98-11-23-45</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>&nbsp;anu@gmail.com.au</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>&nbsp;www.sp.com.au</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>&nbsp;kathmadu,bagmati</a></li>
+              </ul>
+            </div>
+    
+          </div>
+          <div class="col-md-4 col-sm-6 img-fluid d-flex">
+            <div class="linked">
+            <h5>Download our app</h5>
+            <img src="img/tekgro-app-store.png">
+            <img src="img/TekGro-google-play.png">
+            <img src="img/buy.png">
+    
+          </div>
+        </div>
+       
+        </div>
+        </div>
+      </div>
+     </footer>
+    <!-- Footer-end -->
+    
+    
+     
+      <div class="last">
+        <div class="container">
+        <div class="row d-flex ">
+        <div class="col-md-4 col-sm-4 col-4 ">
+         <p> 2020 Perfect Strata Maintenance</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-4">
+          
+          <p> Website by Dreamvision</p>
+        
+      </div>
+        <div class="col-md-4 col-sm-4 col-4">
+          
+          <p> | Privacy PolicyTerms Of Use </p>
+        </div>
+      </div>
+      </div>
+        
+      </div>
+    </div>
+    <div class=" arrow">
+      <a href="#top"> <i class="fas fa-angle-up"></i></a>
+    </div>
+    
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function abc() {
+      document.getElementById("mySidenav").style.width = "75%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    // function abc1() {
+    //   document.getElementById("mySidenav1").style.width = "75%";
+    // }
+    
+    // function closeNav1() {
+    //   document.getElementById("mySidenav1").style.width = "0";
+    // }
+    function hari() {
+      document.getElementById("mySidenav1").style.width = "75%";
+    }
+    
+    function closeNav1() {
+      document.getElementById("mySidenav1").style.width = "0";
+    }
+
+
+
+
+
+
+    function ram() {
+      document.getElementById("mySidenav1").style.width = "75%";
+    }
+    
+    function closeNav2() {
+      document.getElementById("mySidenav1").style.width = "0";
+    }
+    
+    function shyam() {
+      document.getElementById("mySidenav1").style.width = "75%";
+    }
+    
+    function closeNav2() {
+      document.getElementById("mySidenav1").style.width = "0";
+    }
+
+
+
+
+
+
+    function togglePopup(){
+      document.getElementById("popup-1").classList.toggle("active")
+    }
+
+
+
+    
+    </script>
+
+
+
+</body>
+
+</html>
